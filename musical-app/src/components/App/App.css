@@ -2,6 +2,12 @@ html,
 body,
 #root {
   height: 100%;
+  background-color: transparent;
+}
+
+body {
+    /* padding-left: 1rem; */
+  /* padding-right: 1rem; */
 }
 
 html {
@@ -10,11 +16,27 @@ html {
 
 h1 {
   padding: 0.77rem 0;
-  background-color: #b16d22;
+  background-color: rgb(255, 0, 106);
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.88rem;
+  font-size: 2rem;
   color: #fff;
+  font-weight: bold;
+  border-radius: 0px 0px 20px 20px;
+  padding: 2em;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px grey;
+  text-shadow: 2px 2px 2px grey;
+
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+}
+h1:hover{
+  box-shadow: 0 8px 8px 0 #bebbbc,0 8px 8px 0 #adadab;
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  -moz-transform:translate(0px,5px);
 }
 
 h1 .highlight {
@@ -32,7 +54,7 @@ h2 {
 }
 
 .App {
-  background-image: url("./bg1.jpeg");
+  background-image: url("./headphone.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -41,11 +63,17 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 1rem;
+  box-shadow: 1px 1px 5px grey;
+  
 }
 
 .App-playlist {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
   
 }
 

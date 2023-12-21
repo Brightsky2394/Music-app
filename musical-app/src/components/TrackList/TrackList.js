@@ -27,12 +27,9 @@
 // export default TrackList;
 
 import React from "react";
-<<<<<<< HEAD
-import "./TrackList.css";
-=======
 
-import "./TrackList.css"
->>>>>>> 403289f9240adbd553a051781f627bfbd2f851b8
+import "./TrackList.css";
+
 import Track from "../Track/Track";
 
 class TrackList extends React.Component {
@@ -40,7 +37,6 @@ class TrackList extends React.Component {
         console.log("props.tracks: ", this.props.tracks)
         return (
             <div className="TrackList">
-<<<<<<< HEAD
                 {this.props.tracks && this.props.tracks.map(track => {
                     return (
                         <Track
@@ -49,19 +45,9 @@ class TrackList extends React.Component {
                             onAdd={this.props.onAdd}
                             isRemoval={this.props.isRemoval}
                             onRemove={this.props.onRemove}
-=======
-                {this.props.tracks.map(track => {
-                        return(
-                        <Track 
-                        track = {track}
-                        key = {track.id}
-                        onAdd = {this.props.onAdd}
-                        isRemoval = {this.props.isRemoval}
-                        onRemove = {this.props.onRemove}
->>>>>>> 403289f9240adbd553a051781f627bfbd2f851b8
+
                         />
                         )
-                    
                 })
             }
             </div>

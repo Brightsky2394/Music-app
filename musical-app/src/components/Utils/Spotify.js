@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 
 
-const clientId = "78f4f8ed0fc4422d9a2c1eeb8dea0ed8";
-const redirectUri = "http%3A%2F%2Flocalhost%3A3000";
-=======
 const clientId = "b74acc58403e401a9dba1b776e1c4c23";
 const redirectUri = "http://localhost:3000/";
->>>>>>> 403289f9240adbd553a051781f627bfbd2f851b8
+
 let accessToken;
 
 const Spotify = {
@@ -25,10 +21,7 @@ const Spotify = {
             return accessToken;
         } else {
             const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
-<<<<<<< HEAD
-            // const accessUrl = `https://accounts.spotify.com/authorize?client_id=78f4f8ed0fc4422d9a2c1eeb8dea0ed8&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=token&scope=playlist-modify-public`;
-=======
->>>>>>> 403289f9240adbd553a051781f627bfbd2f851b8
+
             window.location = accessUrl;
         }
     },
